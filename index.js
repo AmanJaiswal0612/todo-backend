@@ -4,6 +4,8 @@ const tokenChecker = require("./middlewares/tokenChecker");
 const app= express();
 const signRoute= require("./routes/signup.route");
 const todoRoute = require("./routes/todo.route");
+const cors = require("cors")
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
