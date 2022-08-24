@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
    res.send("Welcome to Server")
 })
 app.use(signRoute)
-app.use(tokenChecker)
+// app.use(tokenChecker)
 app.use(todoRoute)
 
 
